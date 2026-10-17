@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# NADA que descreva ou resulte desta maquina entra no repositorio.
+# Os relatorios de auditoria contem contas, caminhos, politicas, eventos,
+# extensoes de navegador e nomes de arquivo - dado sensivel por definicao.
+# ---------------------------------------------------------------------------
+
+# Relatorios de execucao (os scripts gravam tudo em .\log\)
+log/
+*.txt
+*.log
+*.csv
+*.json
+*.xml
+*.evtx
+*.zip
+
+# Relatorios/analises escritos a partir de uma execucao local
+RELATORIO*.md
+relatorio*.md
+*-local.md
+analise*.md
+
+# Scripts de remediacao: alteram o sistema e sao especificos do achado local.
+# Nao publicamos nenhum deles.
+Fix-*.ps1
+
+# Versoes de trabalho dos scripts de auditoria. O repo carrega apenas
+# Audit-Security-admin-latest.ps1 e Audit-Security-non-admin-latest.ps1.
+Audit-Security-Admin.ps1
+Audit-Security-Admin-v*.ps1
+pf/
+
+# Ruido de sistema / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
